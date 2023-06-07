@@ -3,10 +3,10 @@ import math
 import tkinter as tk
 
 
-class TkinterGUI():  # Something is missing here
-    # TODO 11: Fix this class so that it inherits from the Polygons class
+class TkinterGUI(Polygons):  
 
     def __init__(self, num_sides, side_length):
+        super().__init__( num_sides, side_length)
         # TODO 12: Fix this so that it calls the __init__ method of the Polygons class
         # - You will need to use the super() function and pass in the correct arguments
 

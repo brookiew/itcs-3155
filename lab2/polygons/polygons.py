@@ -14,19 +14,14 @@ class Polygons:
             - area: the area of the polygon
         """
 
-        # TODO 7: Create an attribute called num_sides and set it to the num_sides given in the constructor
-        pass  # Replace this line with your code
+        self.num_sides = num_sides
 
-        # TODO 8: Create an attribute called side_length and set it to the side_length given in the constructor
-        pass  # Replace this line with your code
-
-        # TODO 9: Create an attribute called radius and set it equal to the result of the following formula:
-        # - side_length / (2 * sin(pi / num_sides))
-        # - use the math library to get the value of pi and the sin() function
-        pass  # Replace this line with your code
-
-        # TODO 10: Create an attribute called area and set it equal to the result of the polygon_area() method
-        pass  # Replace this line with your code
+        self.side_length = side_length
+        
+        self.radius = side_length / (2 * math.sin(math.pi / num_sides))
+       
+        self.area = self.polygon_area()
+        
 
     def polygon_area(self):
         """
