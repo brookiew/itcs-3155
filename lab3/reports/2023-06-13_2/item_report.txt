@@ -1,0 +1,6 @@
+Test report for item tests.
+Error in test_calculate_item_price_converts_discount: Incorrect discount
+  - Expected: 0.2
+  - Actual: 0.19999999999999996
+item tests complete.
+6 out of 7 tests passed.
